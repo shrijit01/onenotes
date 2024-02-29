@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 15px 25px;
+    height: calc(100% - 10%);
+    background-color: #202124;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+.heading {
+    color: gray;
+}

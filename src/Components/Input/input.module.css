@@ -1,0 +1,35 @@
+.input_Container {
+    width: 100%;
+    display: flex ;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    padding: 15px 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_btn {
+    width: 50%;
+    display: flex;
+    padding: 5px 20px;
+    position: relative;
+    align-items: center;
+    border-radius: 35px;
+    border: 1px solid gray;
+    justify-content: space-between;
+}
+
+
+.input_text {
+    resize: none;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 10px;
+    background: transparent;
+    color: rgb(184, 177, 169);
+    /* border-bottom: 1px solid gray; */
+}
