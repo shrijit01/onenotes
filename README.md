@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+Home Page Minimal Image
+
+![devNotes](https://github.com/shrijit01/onenotes/assets/79890217/e937975e-99aa-41cd-adea-8f8ab0010138)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
