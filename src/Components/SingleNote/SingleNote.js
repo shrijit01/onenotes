@@ -28,7 +28,7 @@ export default function SingleNote({ text, date, uniq, handleDelete, handleEdit 
         ) : (
           <>
             <h1 className={style.note_heading}>
-              {text.split(' ').length > 2 ? text.split(' ').slice(0, 3).join(' ') + '...' : text}
+              {text.split(' ').length > 2 && text !== "" ? text.split(' ').slice(0, 3).join(' ') + '...' : text}
             </h1>
             <span className={style.note_date}>{date}</span>
           </>

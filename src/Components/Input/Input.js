@@ -28,7 +28,7 @@ function Input({ addNotes }) {
         <>
             <div className={style.input_Container}>
                 <div className={style.input_btn}>
-                    <textarea className={style.input_text}
+                    <input className={style.input_text}
                         rows={1}
                         cols={10}
                         type="text"
@@ -36,7 +36,7 @@ function Input({ addNotes }) {
                         onKeyPress={handleKeyPress}
                         onChange={handleChange}
                         value={newTextValue}
-                    ></textarea>
+                    />
                     <span onClick={handleSubmit} className="material-symbols-outlined ">
                         send
                     </span>
