@@ -1,6 +1,6 @@
 .input_Container {
     width: 100%;
-    display: flex ;
+    display: flex;
     margin-top: 50px;
     position: relative;
     text-align: center;
@@ -28,8 +28,11 @@
     outline: none;
     font-size: 20px;
     font-weight: 800;
+    font-weight: 400;
+    font-style: normal;
     padding: 10px 10px;
     background: transparent;
+    font-optical-sizing: auto;
     color: rgb(184, 177, 169);
-    /* border-bottom: 1px solid gray; */
+    font-family: "Roboto Condensed", sans-serif;
 }

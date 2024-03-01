@@ -3,8 +3,8 @@ import style from './input.module.css';
 
 function Input({ addNotes }) {
     const [newTextValue, setNewTextValue] = useState();
+    
     const handleChange = (e) => {
-        // console.log(e.target.value);
         setNewTextValue(e.target.value);
     }
 
