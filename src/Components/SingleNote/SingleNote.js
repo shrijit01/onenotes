@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './singlenote.module.css';
 
-export default function SingleNote({ text, date, uniq, handleDelete, handleEdit }) {
+export default function SingleNote({ text, date, uniq, handleDelete }) {
   // const [isEditing, setIsEditing] = useState(false);
-  const [editedText, setEditedText] = useState(text);
+  // const [editedText, setEditedText] = useState(text);
 
-  const handleInputChange = (e) => {
-    setEditedText(e.target.value);
-  };
+  // const handleInputChange = (e) => {
+  //   setEditedText(e.target.value);
+  // };
 
-  const handleSaveClick = () => {
-    handleEdit(uniq, editedText);
-    // setIsEditing(false);
-  };
+  // const handleSaveClick = () => {
+  //   handleEdit(uniq, editedText);
+  //   // setIsEditing(false);
+  // };
 
   return (
     <div key={uniq} className={style.note}>
