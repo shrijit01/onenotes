@@ -1,5 +1,4 @@
 .input_Container {
-    width: 100%;
     display: flex;
     margin-top: 50px;
     position: relative;
@@ -22,8 +21,8 @@
 
 
 .input_text {
-    resize: none;
     width: 90%;
+    resize: none;
     border: none;
     outline: none;
     font-size: 20px;

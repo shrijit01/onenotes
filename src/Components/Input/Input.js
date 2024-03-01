@@ -10,7 +10,7 @@ function Input({ addNotes }) {
 
     const handleSubmit = () => {
         if (newTextValue === '') {
-            alert("Write Note First")
+            alert("Please Write Note")
         } else {
             addNotes(newTextValue);
             setNewTextValue('');

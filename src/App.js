@@ -10,7 +10,6 @@ function App() {
     date: "02/29/24",
     id: Math.random()
   }]);
-  // console.log(notes);
 
   const addNotes = (text) => {
     const date = new Date();
@@ -25,22 +24,21 @@ function App() {
   }
 
   const handleDelete =(id)=>{
-    console.log("handleDelete Clicked",id);
     const newNotes = notes.filter((note)=> note.id !== id);
     setNotes(newNotes)
   }
 
 
-  const handleEdit = (id)=>{
-    console.log('handle Edit Clicked ',id);
-  }
+  // const handleEdit = (id)=>{
+  //   console.log('handle Edit Clicked ',id);
+  // }
 
   return (
     <>
       <div className={style.App}>
         <Header />
         <Input addNotes={addNotes} />
-        <NoteList notes={notes} handleDelete={handleDelete} handleEdit={handleEdit}/>
+        <NoteList notes={notes} handleDelete={handleDelete} /> {/* handleEdit={handleEdit} */}
       </div>
     </>
   );

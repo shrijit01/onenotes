@@ -12,7 +12,6 @@
 }
 
 .danger:hover {
-    background: rgba(203, 30, 30, 0.817);
     color: #fff;
-    /* border: 1px solid #fff; */
+    background: rgba(203, 30, 30, 0.817);
 }

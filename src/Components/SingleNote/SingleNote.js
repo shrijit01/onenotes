@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './singlenote.module.css';
 
 export default function SingleNote({ text, date, uniq, handleDelete, handleEdit }) {
-  const [isEditing, setIsEditing] = useState(false);
+  // const [isEditing, setIsEditing] = useState(false);
   const [editedText, setEditedText] = useState(text);
 
   const handleInputChange = (e) => {
@@ -11,13 +11,13 @@ export default function SingleNote({ text, date, uniq, handleDelete, handleEdit 
 
   const handleSaveClick = () => {
     handleEdit(uniq, editedText);
-    setIsEditing(false);
+    // setIsEditing(false);
   };
 
   return (
     <div key={uniq} className={style.note}>
       <div className={style.note_top}>
-        {isEditing ? (
+        {/* {isEditing ? (
           <input
             type="text"
             value={editedText}
@@ -25,25 +25,25 @@ export default function SingleNote({ text, date, uniq, handleDelete, handleEdit 
             onBlur={handleSaveClick}
             autoFocus
           />
-        ) : (
-          <>
-            <h1 className={style.note_heading}>
-              {text.split(' ').length > 2 && text !== "" ? text.split(' ').slice(0, 3).join(' ') + '...' : text}
-            </h1>
-            <span className={style.note_date}>{date}</span>
-          </>
-        )}
+        ) : ( */}
+        {/* <> */}
+          <h1 className={style.note_heading}>
+            {text.split(' ').length > 2 && text !== "" ? text.split(' ').slice(0, 3).join(' ') + '...' : text}
+          </h1>
+          <span className={style.note_date}>{date}</span>
+        {/* </> */}
+        {/* )} */}
       </div>
       <div className={style.bottom}>
-        {isEditing ? (
+        {/* {isEditing ? (
           <button onClick={handleSaveClick} className={style.save_button}>
             Save
           </button>
-        ) : (
-          <span onClick={() => setIsEditing(true)} className="material-symbols-outlined">
+        ) : ( */}
+          {/* <span onClick={() => setIsEditing(true)} className="material-symbols-outlined">
             edit
-          </span>
-        )}
+          </span> */}
+        {/* )} */}
         <span onClick={() => handleDelete(uniq)} className="material-symbols-outlined danger">
           delete
         </span>
